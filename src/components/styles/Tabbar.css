@@ -1,0 +1,41 @@
+@media screen and (max-width: 480px) {
+    ul {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0
+    }
+
+    .tabButton {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-decoration: none;
+    }
+    .tabButton span.itemTitle {
+        position: relative;
+        font-size: 12px;
+        color: #565656;
+       
+    }
+
+    .tabButton.selected span svg {
+        position: relative;
+        color: #4b81ee;
+        fill: #4b81ee;
+    }
+    .tabButton.selected span {
+        position: relative;
+        color: #4b81ee;
+        fill: #4b81ee;
+    }
+
+
+}

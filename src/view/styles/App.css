@@ -1,0 +1,31 @@
+@media screen and (max-width: 480px){
+    .app {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .appHeader {
+        position: relative;
+        width: 100%;
+        height: 44pt;
+        left: 0;
+        z-index: 1;
+    }
+    .appContent {
+        position: relative;
+        width: 100%;
+        height: calc(100% - (44pt + 56px));
+    }
+
+    .appFooter {
+        position: relative;
+        width: 100%;
+        height: 56px;
+        background-color: #fff;
+        box-shadow: 0 0 2px 2px #f0f0f0;
+        border-radius: 24px 24px 0 0 ;
+    }
+}

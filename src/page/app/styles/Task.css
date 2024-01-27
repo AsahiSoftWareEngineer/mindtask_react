@@ -1,0 +1,164 @@
+@media screen and (max-width: 480px) {
+    .taskPage {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .todayTask {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fafafa;
+    }
+    .todayTask ul {
+        position: relative;
+        width: 320px;
+    }
+    .todayTask .taskBar {
+        position: relative;
+        width: 320px;
+        margin-top: 16px;
+        min-height: 48px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 8px;
+    }
+    .taskBar .icon {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: solid 1px #d0d0d0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .taskBar .icon.checked {
+        background-color: #4b81ee;
+        animation: taskChecked .2s ease 0s forwards;
+    }
+    .taskBar .icon span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+    }
+    .taskBar .icon span svg {
+        position: relative;
+        color: #fff;
+        width: 16px;
+        height: 16px;
+    }
+    .taskBar .name {
+        position: relative;
+        width: 240px;
+        padding-left: 16px;
+    }
+    .taskBar .name.checked {
+        text-decoration: line-through;
+    }
+
+    .nextdayTask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 2px 2px #f0f0f0;
+        border-radius: 0 0 24px 24px;
+        transform: translateY(-100%);
+        z-index: 2;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .nextdayTask .addNewTaskButton {
+        position: relative;
+        width: 240px;
+        height: 32px;
+        background-color: #4b81ee;
+        color: #fff;
+        border-radius: 4px;
+    }
+    .nextdayTask .addNewTaskButton:active {
+        opacity: .7;
+    }
+
+    .nextdayTask .handlar{
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .nextdayTask .taskList {
+        position: relative;
+        background-color: #fafafa;
+        width: 100%;
+        height: calc(100% - 96px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-bottom: 24px;
+    }
+    .taskList ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 40px;
+    }
+    .taskList .taskBar.nextDay {
+        background-color: #fff;
+        width: 320px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .taskList .taskBar.nextDay input {
+        min-height: 56px;
+        width: 240px;
+        border: none;
+        outline: none;
+    }
+
+    .nextdayTask button {
+        border: none;
+        background-color: transparent;
+        flex-shrink: 0;
+    }
+    .nextdayTask.open {
+        transform: translateY(calc(0% - 64px));
+    }
+
+    @keyframes taskChecked {
+        0%{
+            transform: scale(0);
+        }
+        80%{
+            transform: scale(1.2)
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+
+
+}
