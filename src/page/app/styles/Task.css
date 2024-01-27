@@ -15,10 +15,15 @@
         flex-direction: column;
         align-items: center;
         background-color: #fafafa;
+        padding-top: 72px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     .todayTask ul {
         position: relative;
         width: 320px;
+        display: flex;
+        flex-direction: column;
     }
     .todayTask .taskBar {
         position: relative;
