@@ -85,8 +85,8 @@
 
     .nextdayTask .addNewTaskButton {
         position: relative;
-        width: 240px;
-        height: 32px;
+        width: 280px;
+        height: 42px;
         background-color: #4b81ee;
         color: #fff;
         border-radius: 4px;
@@ -137,12 +137,14 @@
         width: 240px;
         border: none;
         outline: none;
+        font-size: 17px;
     }
 
     .nextdayTask button {
         border: none;
         background-color: transparent;
         flex-shrink: 0;
+        font-size: 17px;
     }
     .nextdayTask.open {
         transform: translateY(calc(0% - 64px));
