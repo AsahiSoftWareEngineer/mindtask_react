@@ -16,7 +16,6 @@ export const TextInput = ({id, is_readonly, value, onChange, onCommit,}:{
         onChange={(e) => {onChange(e.target.value)}}
         onKeyDown={(e) => {
             if(e.key == "Enter" && !isComposition){
-                onCommit();
                 (e.target as HTMLInputElement).blur();
             }
         }}
