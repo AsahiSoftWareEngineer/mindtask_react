@@ -155,10 +155,10 @@ const TaskPage = () => {
               return (
                 <li>
                   <div className="taskBar">
-                    <button id="checkButton" className={`icon ${task.is_checked?"checked":""}`} onClick={() => {changeTaskState(task.id)}}>
+                    <button id={`checkButton-${task.id}`} className={`icon ${task.is_checked?"checked":""}`} onClick={() => {changeTaskState(task.id)}}>
                       {task.is_checked && <Checkmark />}
                     </button>
-                    <label htmlFor="checkButton" className={`name ${task.is_checked?"checked":""}`}>{task.name}</label>
+                    <label htmlFor={`checkButton-${task.id}`} className={`name ${task.is_checked?"checked":""}`}>{task.name}</label>
                   </div>
                 </li>
               );
