@@ -18,7 +18,6 @@ type LoginRequest = {
     password: string
 }
 
-
 type SignupRequest = {
     email: string,
     username: string,

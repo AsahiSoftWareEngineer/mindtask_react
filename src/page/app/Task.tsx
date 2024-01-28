@@ -113,12 +113,6 @@ const TaskPage = () => {
     if(request.status == 200)return;
   }
 
-
-
-
-
-
-
   return (
     <>
       <section className="taskPage">
